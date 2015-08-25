@@ -10,6 +10,20 @@ var fs = require('fs');
 
 var app = module.exports = express();
 var env = process.env.NODE_ENV || 'development';
+var config = require('./config/config')[env];
+
+var connectDB = function () {
+    var options = { server: { socketOptions: { keepAlive: 1 } } }
+    mongoose.connect(config.db, options)
+};
+connectDB();
+
+var models_path = __dirname + '/api';
+fs.readdirSync(models_path).forEach(function( folder ) {
+    var file = 'model.js',
+        modelFile = models_path + '/' + folder + '/' + file;
+    if ( fs.existsSync( modelFile ) ){ require( modelFile ) }
+});
 
 
 // view engine setup

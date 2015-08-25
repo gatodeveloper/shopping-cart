@@ -1,4 +1,4 @@
-
+var migrate_config = require('../config/migrate-config');
 exports.up = function(next){
 
   var Products = db.model('Products');

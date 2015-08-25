@@ -9,7 +9,5 @@ var models_path = path.resolve(__dirname, '../api');
 fs.readdirSync(models_path).forEach(function( folder ) {
 	var file = 'model.js',
 		modelFile = models_path + '/' + folder + '/' + file;
-	if ( fs.existsSync( modelFile ) ){	
-		require( modelFile )
-	};
+	if ( fs.existsSync( modelFile ) ){ require( modelFile ) }
 });
