@@ -1,7 +1,8 @@
 var migrate_config = require('../config/migrate-config');
+
 exports.up = function(next){
 
-  var Products = db.model('Products');
+  var Products = db.model('Product');
 
 	var productDefault1 = {
 				title: 'Product Title 1'
@@ -134,10 +135,10 @@ exports.up = function(next){
 			,	description: 'Product Description 22'
 			,	price: 400
 			,	stockAmount: 100
-		},
+		};
 
 
-	AccountType.create( 
+	Products.create( 
 		productDefault1,
 		productDefault2,
 		productDefault3,
