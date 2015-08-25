@@ -6,6 +6,19 @@ Install Node Modules
 npm install 
 ```
 
+Install Global Migrate module
+
+```
+npm install migrate -g
+```
+
+Run Migrate
+run migrate from /shopping-cart
+```
+migrate
+```
+
+
 Route Products
 
 ```
