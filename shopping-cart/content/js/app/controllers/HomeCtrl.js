@@ -5,7 +5,6 @@ angular.module('app.controllers')
 
     	$scope.init = function( data ){
     		var data = $rootScope.shoppingCart
-    		debugger;
 			Services.products.getAll( data ).success(function (data) {
 	        	$scope.products = data.results;
 	      	});
@@ -20,7 +19,6 @@ angular.module('app.controllers')
       		Services.shoppingCart.postProduct( userId, productId ).success(function (data) {
       			var noProducts = $rootScope.shoppingCart || [];
       			noProducts.push( productId )
-      			debugger;
       			$scope.init( noProducts );
       			$rootScope.$broadcast('addProductShoppingCart', data);
 	      	});

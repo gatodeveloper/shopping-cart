@@ -1,7 +1,7 @@
 /**
- * expresion-front - expresion
+ * shopping-front - shopping
  * @version v0.0.0
- * @link http://www.expresion.co
+ * @link 
  * @license BSD-2-Clause
  */
 /* line 1, ../global/_general.sass */
@@ -153,11 +153,11 @@ footer {
   top: 80px; }
   /* line 7, ../modules/_shopping-cart.sass */
   .shopping-cart-area .shopping-cart {
-    right: -400px;
-    transition: right 0.3s; }
+    margin-right: -400px;
+    transition: all 0.3s; }
     /* line 11, ../modules/_shopping-cart.sass */
     .shopping-cart-area .shopping-cart.show-cart {
-      right: 0; }
+      margin: 0; }
   /* line 14, ../modules/_shopping-cart.sass */
   .shopping-cart-area .title-cart {
     padding: 1em;

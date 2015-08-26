@@ -1,7 +1,7 @@
 /**
- * expresion-front - expresion
+ * shopping-front - shopping
  * @version v0.0.0
- * @link http://www.expresion.co
+ * @link 
  * @license BSD-2-Clause
  */
 /**
@@ -47,7 +47,6 @@ angular.module('app.controllers')
 
     	$scope.init = function( data ){
     		var data = $rootScope.shoppingCart
-    		debugger;
 			Services.products.getAll( data ).success(function (data) {
 	        	$scope.products = data.results;
 	      	});
@@ -62,7 +61,6 @@ angular.module('app.controllers')
       		Services.shoppingCart.postProduct( userId, productId ).success(function (data) {
       			var noProducts = $rootScope.shoppingCart || [];
       			noProducts.push( productId )
-      			debugger;
       			$scope.init( noProducts );
       			$rootScope.$broadcast('addProductShoppingCart', data);
 	      	});
@@ -93,7 +91,6 @@ app.factory('Services', [ '$http', '$rootScope', 'Configurations',
           return $http.get(server + 'cart/' + userId )
         },
         postProduct : function( userId, productId ){
-          debugger;
           return $http.post(server + 'cart/' + userId, { product: productId })
         },
         deleteProduct : function( userId, productId ){

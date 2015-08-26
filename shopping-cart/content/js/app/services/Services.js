@@ -14,7 +14,6 @@ app.factory('Services', [ '$http', '$rootScope', 'Configurations',
           return $http.get(server + 'cart/' + userId )
         },
         postProduct : function( userId, productId ){
-          debugger;
           return $http.post(server + 'cart/' + userId, { product: productId })
         },
         deleteProduct : function( userId, productId ){
