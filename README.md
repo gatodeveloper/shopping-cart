@@ -1,6 +1,8 @@
 # API Shopping Cart
 
-Install Node Modules
+#### Setup
+
+Install Node Modules in folfers shopping-cart/shopping-cart and shopping-cart/shopping-cart/content
 
 ```
 npm install 
@@ -12,22 +14,13 @@ Install Global Migrate module
 npm install migrate -g
 ```
 
-Run Migrate from /shopping-cart
+Run Migrate from shopping-cart/shopping-cart
 ```
 migrate
 ```
 
-
-Route Products
-
-```
-GET - http://localhost:3000/api/products
-```
-
-Route Shopping Cart
+Install Bower components in Install in shopping-cart/shopping-cart/content
 
 ```
-GET - http://localhost:3000/api/cart/:userId
-POST - http://localhost:3000/api/cart/:userId
-DELETE - http://localhost:3000/api/cart/:userId
+bower install
 ```
