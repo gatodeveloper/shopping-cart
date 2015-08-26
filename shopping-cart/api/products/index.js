@@ -29,6 +29,8 @@ router.route('/cart')
 router.route('/cart/:userId')
 	.post( productsCtrl.postProductCart )
 	.get( productsCtrl.getProductsCart )
+
+router.route('/cart/:userId/products/:productId')
 	.delete( productsCtrl.deleteProductsCart );
 
 

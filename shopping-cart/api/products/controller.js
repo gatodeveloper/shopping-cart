@@ -26,6 +26,9 @@ exports.getProducts = function(req, res){
 
 	var query = req.query;
 	var page = query.p || 1;
+	var noProducts = query.noProduct;
+
+	console.log('noProducts', noProducts);
 
 	var paginate = {
 		perPage: 20,
@@ -35,9 +38,8 @@ exports.getProducts = function(req, res){
 
 	var findProducts = function(){
 		var find = {};
-		var paginate = 
 		Product
-			.find( find )
+			.find( {_id : { $nin : noProducts }})
 			.paginate( paginate, function(err, products){
 				res.send(products)
 			});
@@ -154,7 +156,7 @@ exports.deleteProductsCart = function(req, res){
 	var query = req.query;
 	var params = req.params;
 	var userId = params.userId;
-	var product = body.product;
+	var product = params.productId;
 
 	var findShoppingCart = function( cb ){
 		var find = { 

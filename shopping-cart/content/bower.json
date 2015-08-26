@@ -1,0 +1,24 @@
+{
+  "name": "Shopping Cart",
+  "version": "0.0.0",
+  "authors": [
+    "Diego Santiesteban <gatodeveloper@gmail.com>"
+  ],
+  "description": "Shopping Cart",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "angular-ui-router": "~0.2.13",
+    "heygrid": "*",
+    "ngstorage": "~0.3.7",
+    "angular-ui-bootstrap-bower": "~0.13.1"
+  }
+}

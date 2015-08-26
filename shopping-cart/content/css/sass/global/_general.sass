@@ -1,0 +1,112 @@
+body
+	font-family: 'Archivo Narrow', sans-serif
+	color: $body-color
+
+a
+	color: inherit
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+	//font-family: $roboto
+	margin: 0
+	padding: .5em 0
+	font-weight: 400
+
+
+
+div,
+header,
+section,
+article,
+footer
+	position: relative
+
+p
+	+inline-block
+
+figure
+	img
+		display: block
+		width: 100%
+		height: auto
+
+
+.grid-box
+	text-align: left
+
+input[type=text],
+select
+	border: 0
+	background-color: #fff
+	padding: .5em
+	color: #000
+
+.align-center
+	text-align: center
+.align-right
+	text-align: right
+.align-left
+	text-align: left
+
+.wrapper
+	max-width: 960px
+	margin: auto
+
+.opacity
+	background: rgba(0, 0, 0, 0.3)
+	//background-color: rgba(89, 6, 6, 0.79)
+	color: #fff
+
+.opacity-red
+	background-color: rgba(89, 6, 6, 0.79)
+	color: #fff
+
+
+// Bootstrap
+.btn-primary 
+	color: #fff
+	background-color: #A14141
+	border-color: #8C1C1C
+
+	&:hover,
+	&:focus
+		background-color: #8C1C1C
+		border-color: #9C1C1C
+
+.reset-list
+	padding: 0
+	list-style: none
+
+
+.connection-status
+	font-size: 1em
+
+	span
+		+inline-block
+		vertical-align: middle
+		margin: .1em
+
+	.color
+		width: 10px
+		height: 10px
+		border-radius: 10px
+		background: $color-available
+
+.inline-block
+	+inline-block
+
+.block
+	display: block
+
+.float-right
+	float: right
+.float-left
+	float: left
+
+
+*[class^="layout-"]
+	text-align: left

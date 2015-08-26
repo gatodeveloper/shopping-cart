@@ -1,0 +1,235 @@
+/**
+ * expresion-front - expresion
+ * @version v0.0.0
+ * @link http://www.expresion.co
+ * @license BSD-2-Clause
+ */
+/* line 1, ../global/_general.sass */
+body {
+  font-family: "Archivo Narrow", sans-serif;
+  color: #555; }
+
+/* line 5, ../global/_general.sass */
+a {
+  color: inherit; }
+
+/* line 8, ../global/_general.sass */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0.5em 0;
+  font-weight: 400; }
+
+/* line 21, ../global/_general.sass */
+div,
+header,
+section,
+article,
+footer {
+  position: relative; }
+
+/* line 28, ../global/_general.sass */
+p {
+  display: inline-block;
+  *display: inline; }
+
+/* line 32, ../global/_general.sass */
+figure img {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+/* line 38, ../global/_general.sass */
+.grid-box {
+  text-align: left; }
+
+/* line 41, ../global/_general.sass */
+input[type=text],
+select {
+  border: 0;
+  background-color: #fff;
+  padding: 0.5em;
+  color: #000; }
+
+/* line 48, ../global/_general.sass */
+.align-center {
+  text-align: center; }
+
+/* line 50, ../global/_general.sass */
+.align-right {
+  text-align: right; }
+
+/* line 52, ../global/_general.sass */
+.align-left {
+  text-align: left; }
+
+/* line 55, ../global/_general.sass */
+.wrapper {
+  max-width: 960px;
+  margin: auto; }
+
+/* line 59, ../global/_general.sass */
+.opacity {
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff; }
+
+/* line 64, ../global/_general.sass */
+.opacity-red {
+  background-color: rgba(89, 6, 6, 0.79);
+  color: #fff; }
+
+/* line 70, ../global/_general.sass */
+.btn-primary {
+  color: #fff;
+  background-color: #A14141;
+  border-color: #8C1C1C; }
+  /* line 75, ../global/_general.sass */
+  .btn-primary:hover, .btn-primary:focus {
+    background-color: #8C1C1C;
+    border-color: #9C1C1C; }
+
+/* line 80, ../global/_general.sass */
+.reset-list {
+  padding: 0;
+  list-style: none; }
+
+/* line 85, ../global/_general.sass */
+.connection-status {
+  font-size: 1em; }
+  /* line 88, ../global/_general.sass */
+  .connection-status span {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0.1em; }
+  /* line 93, ../global/_general.sass */
+  .connection-status .color {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #40DB00; }
+
+/* line 99, ../global/_general.sass */
+.inline-block {
+  display: inline-block;
+  *display: inline; }
+
+/* line 102, ../global/_general.sass */
+.block {
+  display: block; }
+
+/* line 105, ../global/_general.sass */
+.float-right {
+  float: right; }
+
+/* line 107, ../global/_general.sass */
+.float-left {
+  float: left; }
+
+/* line 111, ../global/_general.sass */
+*[class^="layout-"] {
+  text-align: left; }
+
+/* line 1, ../sections/_header.sass */
+header {
+  background: #2961f4;
+  color: #fff; }
+
+/* line 1, ../sections/_footer.sass */
+footer {
+  border-top: 1px solid #ccc;
+  padding: 2em;
+  text-align: center; }
+
+/* line 1, ../modules/_shopping-cart.sass */
+.shopping-cart-area {
+  color: #fff;
+  position: fixed;
+  right: 0;
+  top: 80px; }
+  /* line 7, ../modules/_shopping-cart.sass */
+  .shopping-cart-area .shopping-cart {
+    right: -400px;
+    transition: right 0.3s; }
+    /* line 11, ../modules/_shopping-cart.sass */
+    .shopping-cart-area .shopping-cart.show-cart {
+      right: 0; }
+  /* line 14, ../modules/_shopping-cart.sass */
+  .shopping-cart-area .title-cart {
+    padding: 1em;
+    display: block;
+    border-radius: 4px 0 0 4px;
+    background: #2961f4;
+    position: absolute;
+    left: -100px;
+    width: 100px;
+    top: 0;
+    cursor: pointer;
+    font-size: 1.1em; }
+  /* line 26, ../modules/_shopping-cart.sass */
+  .shopping-cart-area .content-empty {
+    padding: 1em; }
+  /* line 29, ../modules/_shopping-cart.sass */
+  .shopping-cart-area .counter-items {
+    position: absolute;
+    border-radius: 30px;
+    left: -20px;
+    top: -20px;
+    min-width: 30px;
+    line-height: 30px;
+    color: #2961f4;
+    border: 1px solid #2961f4;
+    background: #fff;
+    text-align: center;
+    font-size: 20px;
+    display: block;
+    font-weight: bold; }
+  /* line 44, ../modules/_shopping-cart.sass */
+  .shopping-cart-area .shopping-cart-content {
+    background: #fff;
+    color: #444;
+    border: 1px solid #ccc;
+    border-right: 0;
+    width: 400px; }
+    /* line 51, ../modules/_shopping-cart.sass */
+    .shopping-cart-area .shopping-cart-content h4,
+    .shopping-cart-area .shopping-cart-content h3 {
+      padding: 1em;
+      background: #F2F2F2; }
+    /* line 56, ../modules/_shopping-cart.sass */
+    .shopping-cart-area .shopping-cart-content .shopping-cart-list {
+      max-height: 300px;
+      overflow-y: scroll;
+      overflow-x: hidden; }
+    /* line 61, ../modules/_shopping-cart.sass */
+    .shopping-cart-area .shopping-cart-content .list-products {
+      list-style: none;
+      padding: 0.5em;
+      margin: 0; }
+    /* line 66, ../modules/_shopping-cart.sass */
+    .shopping-cart-area .shopping-cart-content .row-list {
+      padding: 1em 0; }
+      /* line 69, ../modules/_shopping-cart.sass */
+      .shopping-cart-area .shopping-cart-content .row-list .info {
+        padding: 0 0.5em; }
+        /* line 72, ../modules/_shopping-cart.sass */
+        .shopping-cart-area .shopping-cart-content .row-list .info p {
+          margin: 0; }
+  /* line 75, ../modules/_shopping-cart.sass */
+  .shopping-cart-area .shopping-cart-bottom {
+    background: #fff;
+    color: #444; }
+
+/* line 1, ../sections/_content.sass */
+#content {
+  padding: 2em 0; }
+
+/* line 3, ../sections/_home.sass */
+.home-section .list-products .row-list {
+  margin-bottom: 1em; }
+
+/*# sourceMappingURL=main.css.map */

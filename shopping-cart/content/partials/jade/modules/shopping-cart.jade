@@ -1,0 +1,26 @@
+.shopping-cart(ng-controller='ShoppingCartCtrl', ng-class="{ 'show-cart': showCart }")
+	span.title-cart(ng-click="showCart = !showCart ")
+		span.counter-items {{ products.length || 0}}
+		| Mi Carrito
+	.shopping-cart-content
+		h4 Tu listado de productos
+		.shopping-cart-list(ng-class="{ 'show-cart': showCart }")
+			//pre {{ products | json }}
+			div.content-empty(ng-show="!products.length > 0") 
+				b Sin productos 
+			ul.list-products.grid-layout(ng-show="products.length > 0")
+				li.row-list(ng-repeat="product in products")
+					span.layout-10
+						span {{ $index + 1 }}
+					span.layout-10
+						figure
+							img( src="//dummyimage.com/200x200")
+					span.layout-70
+						div.info
+							p {{ product.title }}
+							div precio: ${{ product.price }}
+					span.layout-10
+						a.btn.btn-md.btn-success( ng-click="deleteProduct( product._id )") x
+		.shopping-cart-bottom
+			.totals
+				h3 Total: ${{ total }}
