@@ -18,6 +18,11 @@ Run Migrate from shopping-cart/shopping-cart
 ```
 migrate
 ```
+Run gulp in shopping-cart/shopping-cart/content
+
+```
+gulp
+```
 
 Install Bower components in shopping-cart/shopping-cart/content
 
