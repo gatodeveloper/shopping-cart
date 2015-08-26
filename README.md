@@ -1,6 +1,6 @@
 # API Shopping Cart
 
-#### Setup
+#### Init Setup
 
 Install Node Modules in folfers shopping-cart/shopping-cart and shopping-cart/shopping-cart/content
 
@@ -19,7 +19,7 @@ Run Migrate from shopping-cart/shopping-cart
 migrate
 ```
 
-Install Bower components in Install in shopping-cart/shopping-cart/content
+Install Bower components in shopping-cart/shopping-cart/content
 
 ```
 bower install
